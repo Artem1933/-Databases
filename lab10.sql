@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: MySQL-8.2
--- Время создания: Ноя 27 2024 г., 01:27
+-- Время создания: Ноя 27 2024 г., 09:47
 -- Версия сервера: 8.2.0
 -- Версия PHP: 8.1.28
 
@@ -43,7 +43,7 @@ CREATE TABLE `stations` (
   `id` int NOT NULL,
   `name` varchar(255) NOT NULL,
   `line_id` int NOT NULL,
-  `coordinates` varchar(50) DEFAULT NULL,
+  `order` int NOT NULL,
   `opened_date` date DEFAULT NULL,
   `status` enum('active','under_construction','closed') DEFAULT 'active'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
